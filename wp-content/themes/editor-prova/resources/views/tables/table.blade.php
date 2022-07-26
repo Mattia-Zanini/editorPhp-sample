@@ -161,10 +161,12 @@ $(document).ready(function() {
     });
 
     editor.on('submitComplete', function(e, type) {
-        /*var info = table.page.info();
-        console.log(info.page);*/
+        var info = table.page.info();
+        //console.log(info.page);
         table.ajax.reload();
-        table.draw();
+        setTimeout(() => {
+            table.page(info.page).draw('page');
+        }, 100);
     });
 });
 </script>
