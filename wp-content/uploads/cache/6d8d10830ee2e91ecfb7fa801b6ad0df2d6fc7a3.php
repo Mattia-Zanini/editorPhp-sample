@@ -46,10 +46,6 @@ $(document).ready(function() {
             },
         },*/
         fields: [{
-                label: 'ID',
-                name: 'data_id'
-            },
-            {
                 label: 'Name',
                 name: 'data_name'
             },
@@ -73,6 +69,10 @@ $(document).ready(function() {
                 label: 'Start Date',
                 name: 'data_start_date',
                 type: 'datetime'
+            },
+            {
+                label: 'ID',
+                name: 'data_id'
             },
         ]
     });
