@@ -166,7 +166,7 @@ $(document).ready(function() {
         table.ajax.reload();
         setTimeout(() => {
             table.page(info.page).draw('page');
-        }, 50);
+        }, 100);
     });
 });
 </script>
