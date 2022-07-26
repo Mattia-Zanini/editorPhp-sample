@@ -35,5 +35,5 @@ Editor::inst( $db, 'objects', 'data_id' )
 
       )
 	->debug(true)
-      ->process( $_POST )
-      ->json();
+    ->process( $_POST )
+    ->json();
