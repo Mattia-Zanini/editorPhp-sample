@@ -85,7 +85,7 @@ $(document).ready(function() {
         //console.log("$" + salaryvalue);
 
         //modifica il dato
-        //editor.field('data_salary').val("$" + editor.field('data_salary').val());
+        editor.field('data_salary').val("$" + editor.field('data_salary').val());
     });
 
 
