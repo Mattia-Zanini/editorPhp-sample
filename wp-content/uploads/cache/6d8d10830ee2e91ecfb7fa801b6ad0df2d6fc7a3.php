@@ -46,6 +46,10 @@ $(document).ready(function() {
             },
         },*/
         fields: [{
+                label: 'ID',
+                name: 'data_id'
+            },
+            {
                 label: 'Name',
                 name: 'data_name'
             },
@@ -69,10 +73,6 @@ $(document).ready(function() {
                 label: 'Start Date',
                 name: 'data_start_date',
                 type: 'datetime'
-            },
-            {
-                label: 'ID',
-                name: 'data_id'
             },
         ]
     });
@@ -126,8 +126,8 @@ $(document).ready(function() {
             [1, 'asc']
         ],
         colReorder: true,
-        //select: true,
-        select: 'single',
+        //select: true, //abilita la selezione e puoi selezionare più di una riga
+        select: 'single', //abilita la selezione e permette di selezionare una sola riga
         buttons: [{
                 extend: 'create',
                 editor: editor
