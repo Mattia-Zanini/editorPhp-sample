@@ -69,13 +69,19 @@ $(document).ready(function() {
             },
             {
                 label: 'Start Date',
-                name: 'data_start_date'
+                name: 'data_start_date',
+                type: 'datetime'
             },
             {
                 label: 'ID',
                 name: 'data_id'
             },
         ]
+    });
+
+    editor.on('preSubmit', function(e, type) {
+        //manda l'alert quando i dati ajax sono pronti per essere mandati
+        //alert('Hahhahahah scemooo');
     });
 
 
