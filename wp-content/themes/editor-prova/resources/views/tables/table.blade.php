@@ -1,4 +1,4 @@
-<table id="example" class="display table table-striped" style="width:100%">
+<table id="example" class="display table" style="width:100%">
     <thead>
         <tr>
             <th></th>
@@ -19,24 +19,15 @@ var $ = jQuery;
 function format(d) {
     // `d` is the original data object for the row
 
-    let childRow = '<table cellpadding="5" cellspacing="0" border="0" style="padding-left:50px;">' +
+    let childRow = '<table cellpadding="0" cellspacing="0" border="2">' +
         '<tr>' +
-        '<td>ID:</td>' +
-        '<td>' +
-        d.data_id +
+        '<td>ID: ' + d.data_id + '</td>' +
         '</td>' +
-        '</tr>' +
-        '<tr>' +
-        '<td>Start Date:</td>' +
         '<td>' +
-        d.data_start_date +
+        '<td>Start Date: ' + d.data_start_date + '</td>' +
         '</td>' +
-        '</tr>' +
-        '<tr>' +
-        '<td>Extension number:</td>' +
         '<td>' +
-        d.data_extn +
-        '</td>' +
+        '<td>Extension number: ' + d.data_extn + '</td>' +
         '</tr>' +
         '</table>';
 
@@ -47,6 +38,13 @@ $(document).ready(function() {
     var editor = new $.fn.dataTable.Editor({
         ajax: 'Editor/controllers/prova.php',
         table: '#example',
+        /*i18n: {
+            create: {
+                button: "Nouveau",
+                title: "Créer nouvelle entrée",
+                submit: "Créer"
+            },
+        },*/
         fields: [{
                 label: 'Name',
                 name: 'data_name'
@@ -79,9 +77,15 @@ $(document).ready(function() {
         ]
     });
 
-    editor.on('preSubmit', function(e, type) {
+    editor.on('initSubmit', function(e, type) {
         //manda l'alert quando i dati ajax sono pronti per essere mandati
         //alert('Hahhahahah scemooo');
+
+        //let salaryvalue = editor.field('data_salary').val();
+        //console.log("$" + salaryvalue);
+
+        //modifica il dato
+        //editor.field('data_salary').val("$" + editor.field('data_salary').val());
     });
 
 
