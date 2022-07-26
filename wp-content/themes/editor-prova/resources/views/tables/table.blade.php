@@ -84,7 +84,7 @@ $(document).ready(function() {
         //let salaryvalue = editor.field('data_salary').val();
         //console.log("$" + salaryvalue);
 
-        //modifica il dato
+        //modifica il sigolo dato, crea problemi invece, nel caso in cui ci siano più righe selezionate
         //editor.field('data_salary').val("$" + editor.field('data_salary').val());
     });
 
