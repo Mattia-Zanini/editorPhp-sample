@@ -126,7 +126,8 @@ $(document).ready(function() {
             [1, 'asc']
         ],
         colReorder: true,
-        select: true,
+        //select: true, //abilita la selezione e puoi selezionare più di una riga
+        select: 'single', //abilita la selezione e permette di selezionare una sola riga
         buttons: [{
                 extend: 'create',
                 editor: editor

@@ -126,7 +126,8 @@ $(document).ready(function() {
             [1, 'asc']
         ],
         colReorder: true,
-        select: true,
+        //select: true,
+        select: 'single',
         buttons: [{
                 extend: 'create',
                 editor: editor
