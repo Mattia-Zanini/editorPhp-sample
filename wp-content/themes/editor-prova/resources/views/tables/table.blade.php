@@ -88,7 +88,6 @@ $(document).ready(function() {
         //editor.field('data_salary').val("$" + editor.field('data_salary').val());
     });
 
-
     var table = $('#example').DataTable({
         //ajax: 'wp-content/themes/editor-prova/objects.json',
         ajax: 'Editor/controllers/prova.php',
@@ -159,6 +158,13 @@ $(document).ready(function() {
             row.child(format(row.data())).show();
             tr.addClass('shown');
         }
+    });
+
+    editor.on('submitComplete', function(e, type) {
+        /*var info = table.page.info();
+        console.log(info.page);*/
+        table.ajax.reload();
+        table.draw();
     });
 });
 </script>
