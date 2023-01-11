@@ -24,7 +24,11 @@ function load_js()
 	wp_enqueue_script('buttons_dt', get_template_directory_uri() . "/js/default/dataTables.buttons.min.js", array(), '2.3.3', true);
 	wp_enqueue_script('select', get_template_directory_uri() . "/js/default/dataTables.select.min.js", array(), '1.5.0', true);
 	wp_enqueue_script('dateTime', get_template_directory_uri() . "/js/default/dataTables.dateTime.min.js", array(), '1.2.0', true);
-	wp_enqueue_script('editor', "/Editor/js/dataTables.editor.js", array(), '2.0.10', true);
+
+	//wp_enqueue_script('editor_pippo', get_template_directory_uri() . "/js/edit/dataTables.editor.js", array(), '2.0.10', true);
+	//wp_enqueue_script('editor_bootstrap', get_template_directory_uri() . "/js/edit/editor.bootstrap5.js", array(), '2.0.10', true);
+
+	wp_enqueue_script('editor_pippo', "/Editor/js/dataTables.editor.js", array(), '2.0.10', true);
 	wp_enqueue_script('editor_bootstrap', "/Editor/js/editor.bootstrap5.js", array(), '2.0.10', true);
 }
 add_action('wp_enqueue_scripts', 'load_js');
