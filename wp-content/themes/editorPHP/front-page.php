@@ -30,7 +30,9 @@
     var $ = jQuery;
     var rows = null;
 
-    $(document).ready(function() {
+    $(document).ready(function() {});
+
+    $(window).on('load', function() {
         /*
         var jqxhr = $.get("Editor/controllers/prova.php", function(data) {
                 //alert("success");
@@ -45,7 +47,6 @@
             })
         */
 
-        /*
         var editor = new $.fn.dataTable.Editor({
             ajax: "Editor/controllers/prova.php",
             table: "#example",
@@ -71,7 +72,7 @@
                 }
             ]
         });
-        */
+
 
         var table = $('#example').DataTable({
             dom: "Bfrtip",
