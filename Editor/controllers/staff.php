@@ -19,7 +19,7 @@ DataTables\Editor\Validate,
 DataTables\Editor\ValidateOptions;
 
 // Build our Editor instance and process the data coming from _POST
-Editor::inst($db, 'objects')
+Editor::inst($db, 'objects', 'ID')
 	->fields(
 		Field::inst('objects.first_name')
 			->validator(
