@@ -20,19 +20,19 @@
 
 // ** Impostazioni database - È possibile ottenere queste informazioni dal proprio fornitore di hosting ** //
 /** Il nome del database di WordPress */
-define( 'DB_NAME', 'wordpress' );
+define('DB_NAME', 'editorphpwordpress');
 
 /** Nome utente del database */
-define( 'DB_USER', 'root' );
+define('DB_USER', 'root');
 
 /** Password del database */
-define( 'DB_PASSWORD', '' );
+define('DB_PASSWORD', '');
 
 /** Hostname del database */
-define( 'DB_HOST', 'localhost' );
+define('DB_HOST', 'localhost');
 
 /** Charset del Database da utilizzare nella creazione delle tabelle. */
-define( 'DB_CHARSET', 'utf8mb4' );
+define('DB_CHARSET', 'utf8mb4');
 
 /** Il tipo di Collazione del Database. Da non modificare se non si ha idea di cosa sia. */
 define('DB_COLLATE', '');
@@ -46,14 +46,14 @@ define('DB_COLLATE', '');
  *
  * @since 2.6.0
  */
-define( 'AUTH_KEY',         'V/W387Ahy2CxO}O[*Q_@@xi>^w90jcl9-K;4JO*.Bw(JsC#hA.pN/}@Kq:Pv;=qD' );
-define( 'SECURE_AUTH_KEY',  '*8PCAWBENu(io]nacao:i7q`V.dTtX6zx(lhD3/FF@<{Q$~hYFLu3P[_*M./trF@' );
-define( 'LOGGED_IN_KEY',    '~6SfwHS5{m]muG.Z9$3$D4czSJotH!@>CGPJkLp]uk!GlxfvB%@ry8,QQRrW#zw_' );
-define( 'NONCE_KEY',        '4}<x:.:I:]8Xx3z|c:}/am9W$N$DX~Iw/0S2hnRLPKitDba90?6Ej24z>IB]G_6D' );
-define( 'AUTH_SALT',        '=7iV<S,j*D^j!aB~,T&2J Vg{0^</I{ XJ&1Z%iw-5|IAad]RgOW+^8sh<RSsWTq' );
-define( 'SECURE_AUTH_SALT', '&^u4R6HVhbtGlms&5`:vi&7I4+$`E1+@kee8 .#NH;%wtvWdT_%f5*|M!jJ}-EeO' );
-define( 'LOGGED_IN_SALT',   '>o*@3x.5#oYM6%M!0g3(+T~.uZcxe=At#@:&l^7%NjPS!pLP-US0Lb[lt,=VlhDZ' );
-define( 'NONCE_SALT',       'Zv?VDBV:aJC^iUJT<mSQMvAq<]Wl2+0D-}y5T-USh_ 17ZN~|4X};xM1-n6;db:{' );
+define('AUTH_KEY', 'V/W387Ahy2CxO}O[*Q_@@xi>^w90jcl9-K;4JO*.Bw(JsC#hA.pN/}@Kq:Pv;=qD');
+define('SECURE_AUTH_KEY', '*8PCAWBENu(io]nacao:i7q`V.dTtX6zx(lhD3/FF@<{Q$~hYFLu3P[_*M./trF@');
+define('LOGGED_IN_KEY', '~6SfwHS5{m]muG.Z9$3$D4czSJotH!@>CGPJkLp]uk!GlxfvB%@ry8,QQRrW#zw_');
+define('NONCE_KEY', '4}<x:.:I:]8Xx3z|c:}/am9W$N$DX~Iw/0S2hnRLPKitDba90?6Ej24z>IB]G_6D');
+define('AUTH_SALT', '=7iV<S,j*D^j!aB~,T&2J Vg{0^</I{ XJ&1Z%iw-5|IAad]RgOW+^8sh<RSsWTq');
+define('SECURE_AUTH_SALT', '&^u4R6HVhbtGlms&5`:vi&7I4+$`E1+@kee8 .#NH;%wtvWdT_%f5*|M!jJ}-EeO');
+define('LOGGED_IN_SALT', '>o*@3x.5#oYM6%M!0g3(+T~.uZcxe=At#@:&l^7%NjPS!pLP-US0Lb[lt,=VlhDZ');
+define('NONCE_SALT', 'Zv?VDBV:aJC^iUJT<mSQMvAq<]Wl2+0D-}y5T-USh_ 17ZN~|4X};xM1-n6;db:{');
 
 /**#@-*/
 
@@ -83,7 +83,7 @@ define('WP_DEBUG', false);
 /* Finito, interrompere le modifiche! Buon blogging. */
 
 /** Path assoluto alla directory di WordPress. */
-if ( !defined('ABSPATH') )
+if (!defined('ABSPATH'))
 	define('ABSPATH', dirname(__FILE__) . '/');
 
 /** Imposta le variabili di WordPress ed include i file. */

@@ -1,5 +1,6 @@
+
 /*! Bootstrap integration for DataTables' Editor
- * ©2015 SpryMedia Ltd - datatables.net/license
+ * © SpryMedia Ltd - datatables.net/license
  */
 
 (function( factory ){
@@ -13,16 +14,25 @@
 		// CommonJS
 		module.exports = function (root, $) {
 			if ( ! root ) {
+				// CommonJS environments without a window global must pass a
+				// root. This will give an error otherwise
 				root = window;
 			}
 
-			if ( ! $ || ! $.fn.dataTable ) {
-				$ = require('datatables.net-bs4')(root, $).$;
+			if ( ! $ ) {
+				$ = typeof window !== 'undefined' ? // jQuery's factory checks for a global window
+					require('jquery') :
+					require('jquery')( root );
 			}
 
-			if ( ! $.fn.dataTable.Editor ) {
+			if ( ! $.fn.dataTable ) {
+				require('datatables.net-bs4')(root, $);
+			}
+
+			if ( ! $.fn.dataTable ) {
 				require('datatables.net-editor')(root, $);
 			}
+
 
 			return factory( $, root, root.document );
 		};
@@ -35,6 +45,8 @@
 'use strict';
 var DataTable = $.fn.dataTable;
 
+
+var Editor = DataTable.Editor;
 
 /*
  * Set the default display controller to be our bootstrap control 
@@ -125,7 +137,7 @@ const dom = {
 DataTable.Editor.display.bootstrap = $.extend( true, {}, DataTable.Editor.models.displayController, {
 	init: function ( dte ) {
 		// Add `form-control` to required elements
-		dte.on( 'displayOrder.dtebs', function ( e, display, action, form ) {
+		dte.on( 'displayOrder.dtebs open.dtebs', function ( e, display, action, form ) {
 			$.each( dte.s.fields, function ( key, field ) {
 				$('input:not([type=checkbox]):not([type=radio]), select, textarea', field.node() )
 					.addClass( 'form-control' );
@@ -247,5 +259,5 @@ DataTable.Editor.display.bootstrap = $.extend( true, {}, DataTable.Editor.models
 } );
 
 
-return DataTable.Editor;
+return Editor;
 }));

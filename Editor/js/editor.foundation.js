@@ -1,5 +1,6 @@
+
 /*! Foundation integration for DataTables' Editor
- * ©2015 SpryMedia Ltd - datatables.net/license
+ * © SpryMedia Ltd - datatables.net/license
  */
 
 (function( factory ){
@@ -13,16 +14,25 @@
 		// CommonJS
 		module.exports = function (root, $) {
 			if ( ! root ) {
+				// CommonJS environments without a window global must pass a
+				// root. This will give an error otherwise
 				root = window;
 			}
 
-			if ( ! $ || ! $.fn.dataTable ) {
-				$ = require('datatables.net-zf')(root, $).$;
+			if ( ! $ ) {
+				$ = typeof window !== 'undefined' ? // jQuery's factory checks for a global window
+					require('jquery') :
+					require('jquery')( root );
 			}
 
-			if ( ! $.fn.dataTable.Editor ) {
+			if ( ! $.fn.dataTable ) {
+				require('datatables.net-zf')(root, $);
+			}
+
+			if ( ! $.fn.dataTable ) {
 				require('datatables.net-editor')(root, $);
 			}
+
 
 			return factory( $, root, root.document );
 		};
@@ -35,6 +45,8 @@
 'use strict';
 var DataTable = $.fn.dataTable;
 
+
+var Editor = DataTable.Editor;
 
 /*
  * Set the default display controller to be our foundation control 
@@ -149,5 +161,5 @@ DataTable.Editor.display.foundation = $.extend( true, {}, DataTable.Editor.model
 } );
 
 
-return DataTable.Editor;
+return Editor;
 }));

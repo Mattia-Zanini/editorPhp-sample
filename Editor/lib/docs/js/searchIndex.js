@@ -1616,6 +1616,46 @@ Search.appendIndex(
             "summary": "Write\u0020the\u0020field\u0027s\u0020value\u0020to\u0020an\u0020array\u0020structure,\u0020using\u0020Javascript\u0020dotted\nobject\u0020notation\u0020to\u0020indicate\u0020JSON\u0020data\u0020structure.\u0020For\u0020example\u0020\u0060name.first\u0060\ngives\u0020the\u0020data\u0020structure\u003A\u0020\u0060name\u003A\u0020\u007B\u0020first\u003A\u0020...\u0020\u007D\u0060.\u0020This\u0020matches\u0020DataTables\nown\u0020ability\u0020to\u0020do\u0020this\u0020on\u0020the\u0020client\u002Dside,\u0020although\u0020this\u0020doesn\u0027t\nimplement\u0020implement\u0020quite\u0020such\u0020a\u0020complex\u0020structure\u0020\u0028no\u0020array\u0020\/\u0020function\nsupport\u0029.",
             "url": "classes/DataTables-Ext.html#method__writeProp"
         },                {
+            "fqsen": "\\DataTables\\Editor\\SearchBuilderOptions",
+            "name": "SearchBuilderOptions",
+            "summary": "The\u0020Options\u0020class\u0020provides\u0020a\u0020convenient\u0020method\u0020of\u0020specifying\u0020where\u0020Editor\nshould\u0020get\u0020the\u0020list\u0020of\u0020options\u0020for\u0020a\u0020\u0060select\u0060,\u0020\u0060radio\u0060\u0020or\u0020\u0060checkbox\u0060\u0020field.",
+            "url": "classes/DataTables-Editor-SearchBuilderOptions.html"
+        },                {
+            "fqsen": "\\DataTables\\Editor\\SearchBuilderOptions\u003A\u003Alabel\u0028\u0029",
+            "name": "label",
+            "summary": "Get\u0020\/\u0020set\u0020the\u0020column\u0028s\u0029\u0020to\u0020use\u0020as\u0020the\u0020label\u0020value\u0020of\u0020the\u0020options",
+            "url": "classes/DataTables-Editor-SearchBuilderOptions.html#method_label"
+        },                {
+            "fqsen": "\\DataTables\\Editor\\SearchBuilderOptions\u003A\u003Aorder\u0028\u0029",
+            "name": "order",
+            "summary": "Get\u0020\/\u0020set\u0020the\u0020ORDER\u0020BY\u0020clause\u0020to\u0020use\u0020in\u0020the\u0020SQL.\u0020If\u0020this\u0020option\u0020is\u0020not\nprovided\u0020the\u0020ordering\u0020will\u0020be\u0020based\u0020on\u0020the\u0020rendered\u0020output,\u0020either\nnumerically\u0020or\u0020alphabetically\u0020based\u0020on\u0020the\u0020data\u0020returned\u0020by\u0020the\u0020renderer.",
+            "url": "classes/DataTables-Editor-SearchBuilderOptions.html#method_order"
+        },                {
+            "fqsen": "\\DataTables\\Editor\\SearchBuilderOptions\u003A\u003Arender\u0028\u0029",
+            "name": "render",
+            "summary": "Get\u0020\/\u0020set\u0020the\u0020label\u0020renderer.\u0020The\u0020renderer\u0020can\u0020be\u0020used\u0020to\u0020combine\nmultiple\u0020database\u0020columns\u0020into\u0020a\u0020single\u0020string\u0020that\u0020is\u0020shown\u0020as\u0020the\u0020label\nto\u0020the\u0020end\u0020user\u0020in\u0020the\u0020list\u0020of\u0020options.",
+            "url": "classes/DataTables-Editor-SearchBuilderOptions.html#method_render"
+        },                {
+            "fqsen": "\\DataTables\\Editor\\SearchBuilderOptions\u003A\u003Atable\u0028\u0029",
+            "name": "table",
+            "summary": "Get\u0020\/\u0020set\u0020the\u0020database\u0020table\u0020from\u0020which\u0020to\u0020gather\u0020the\u0020options\u0020for\u0020the\nlist.",
+            "url": "classes/DataTables-Editor-SearchBuilderOptions.html#method_table"
+        },                {
+            "fqsen": "\\DataTables\\Editor\\SearchBuilderOptions\u003A\u003Avalue\u0028\u0029",
+            "name": "value",
+            "summary": "Get\u0020\/\u0020set\u0020the\u0020column\u0020name\u0020to\u0020use\u0020for\u0020the\u0020value\u0020in\u0020the\u0020options\u0020list.\u0020This\nwould\u0020normally\u0020be\u0020the\u0020primary\u0020key\u0020for\u0020the\u0020table.",
+            "url": "classes/DataTables-Editor-SearchBuilderOptions.html#method_value"
+        },                {
+            "fqsen": "\\DataTables\\Editor\\SearchBuilderOptions\u003A\u003Awhere\u0028\u0029",
+            "name": "where",
+            "summary": "Get\u0020\/\u0020set\u0020the\u0020method\u0020to\u0020use\u0020for\u0020a\u0020WHERE\u0020condition\u0020if\u0020it\u0020is\u0020to\u0020be\napplied\u0020to\u0020the\u0020query\u0020to\u0020get\u0020the\u0020options.",
+            "url": "classes/DataTables-Editor-SearchBuilderOptions.html#method_where"
+        },                {
+            "fqsen": "\\DataTables\\Editor\\SearchBuilderOptions\u003A\u003AleftJoin\u0028\u0029",
+            "name": "leftJoin",
+            "summary": "Get\u0020\/\u0020set\u0020the\u0020array\u0020values\u0020used\u0020for\u0020a\u0020leftJoin\u0020condition\u0020if\u0020it\u0020is\u0020to\u0020be\napplied\u0020to\u0020the\u0020query\u0020to\u0020get\u0020the\u0020options.",
+            "url": "classes/DataTables-Editor-SearchBuilderOptions.html#method_leftJoin"
+        },                {
             "fqsen": "\\DataTables\\HtmLawed\\Htmlaw",
             "name": "Htmlaw",
             "summary": "A\u0020class\u0020wrapper\u0020for\u0020the\u0020htmLawed\u0020library.",
@@ -1705,46 +1745,6 @@ Search.appendIndex(
             "name": "hl_version",
             "summary": "",
             "url": "classes/DataTables-HtmLawed-Htmlawed.html#method_hl_version"
-        },                {
-            "fqsen": "\\DataTables\\Editor\\SearchBuilderOptions",
-            "name": "SearchBuilderOptions",
-            "summary": "The\u0020Options\u0020class\u0020provides\u0020a\u0020convenient\u0020method\u0020of\u0020specifying\u0020where\u0020Editor\nshould\u0020get\u0020the\u0020list\u0020of\u0020options\u0020for\u0020a\u0020\u0060select\u0060,\u0020\u0060radio\u0060\u0020or\u0020\u0060checkbox\u0060\u0020field.",
-            "url": "classes/DataTables-Editor-SearchBuilderOptions.html"
-        },                {
-            "fqsen": "\\DataTables\\Editor\\SearchBuilderOptions\u003A\u003Alabel\u0028\u0029",
-            "name": "label",
-            "summary": "Get\u0020\/\u0020set\u0020the\u0020column\u0028s\u0029\u0020to\u0020use\u0020as\u0020the\u0020label\u0020value\u0020of\u0020the\u0020options",
-            "url": "classes/DataTables-Editor-SearchBuilderOptions.html#method_label"
-        },                {
-            "fqsen": "\\DataTables\\Editor\\SearchBuilderOptions\u003A\u003Aorder\u0028\u0029",
-            "name": "order",
-            "summary": "Get\u0020\/\u0020set\u0020the\u0020ORDER\u0020BY\u0020clause\u0020to\u0020use\u0020in\u0020the\u0020SQL.\u0020If\u0020this\u0020option\u0020is\u0020not\nprovided\u0020the\u0020ordering\u0020will\u0020be\u0020based\u0020on\u0020the\u0020rendered\u0020output,\u0020either\nnumerically\u0020or\u0020alphabetically\u0020based\u0020on\u0020the\u0020data\u0020returned\u0020by\u0020the\u0020renderer.",
-            "url": "classes/DataTables-Editor-SearchBuilderOptions.html#method_order"
-        },                {
-            "fqsen": "\\DataTables\\Editor\\SearchBuilderOptions\u003A\u003Arender\u0028\u0029",
-            "name": "render",
-            "summary": "Get\u0020\/\u0020set\u0020the\u0020label\u0020renderer.\u0020The\u0020renderer\u0020can\u0020be\u0020used\u0020to\u0020combine\nmultiple\u0020database\u0020columns\u0020into\u0020a\u0020single\u0020string\u0020that\u0020is\u0020shown\u0020as\u0020the\u0020label\nto\u0020the\u0020end\u0020user\u0020in\u0020the\u0020list\u0020of\u0020options.",
-            "url": "classes/DataTables-Editor-SearchBuilderOptions.html#method_render"
-        },                {
-            "fqsen": "\\DataTables\\Editor\\SearchBuilderOptions\u003A\u003Atable\u0028\u0029",
-            "name": "table",
-            "summary": "Get\u0020\/\u0020set\u0020the\u0020database\u0020table\u0020from\u0020which\u0020to\u0020gather\u0020the\u0020options\u0020for\u0020the\nlist.",
-            "url": "classes/DataTables-Editor-SearchBuilderOptions.html#method_table"
-        },                {
-            "fqsen": "\\DataTables\\Editor\\SearchBuilderOptions\u003A\u003Avalue\u0028\u0029",
-            "name": "value",
-            "summary": "Get\u0020\/\u0020set\u0020the\u0020column\u0020name\u0020to\u0020use\u0020for\u0020the\u0020value\u0020in\u0020the\u0020options\u0020list.\u0020This\nwould\u0020normally\u0020be\u0020the\u0020primary\u0020key\u0020for\u0020the\u0020table.",
-            "url": "classes/DataTables-Editor-SearchBuilderOptions.html#method_value"
-        },                {
-            "fqsen": "\\DataTables\\Editor\\SearchBuilderOptions\u003A\u003Awhere\u0028\u0029",
-            "name": "where",
-            "summary": "Get\u0020\/\u0020set\u0020the\u0020method\u0020to\u0020use\u0020for\u0020a\u0020WHERE\u0020condition\u0020if\u0020it\u0020is\u0020to\u0020be\napplied\u0020to\u0020the\u0020query\u0020to\u0020get\u0020the\u0020options.",
-            "url": "classes/DataTables-Editor-SearchBuilderOptions.html#method_where"
-        },                {
-            "fqsen": "\\DataTables\\Editor\\SearchBuilderOptions\u003A\u003AleftJoin\u0028\u0029",
-            "name": "leftJoin",
-            "summary": "Get\u0020\/\u0020set\u0020the\u0020array\u0020values\u0020used\u0020for\u0020a\u0020leftJoin\u0020condition\u0020if\u0020it\u0020is\u0020to\u0020be\napplied\u0020to\u0020the\u0020query\u0020to\u0020get\u0020the\u0020options.",
-            "url": "classes/DataTables-Editor-SearchBuilderOptions.html#method_leftJoin"
         },                {
             "fqsen": "\\",
             "name": "\\",
