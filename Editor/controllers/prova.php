@@ -23,7 +23,7 @@ use Illuminate\Support\Str;
 // Build our Editor instance and process the data coming from _POST
 
 //$db->sql('set names utf8');
-Editor::inst($db, 'objects', 'ID')
+Editor::inst($db, 'objects')
 	->fields(
 		Field::inst('first_name'),
 		Field::inst('last_name'),
